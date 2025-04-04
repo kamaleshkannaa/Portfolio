@@ -25,7 +25,7 @@ export default function Skills() {
                 </p> 
                 <h2 className='title-font font-bold text-white sm:text-2xl '>Other Skills :</h2> 
                 <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base'>
-                 Git & GitHub ✅ API Integration (REST) ✅ UI/UX Design Principles ✅ Programming Langu (C, JAVA)             
+                 Git & GitHub ✅ API Integration (REST) ✅ UI/UX Design Principles ✅ Programming Languages (C, JAVA)             
                 </p>
 
             </div>
