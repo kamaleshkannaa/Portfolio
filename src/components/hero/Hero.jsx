@@ -26,13 +26,27 @@ export default function Hero() {
                 <p className='mb-8 leading-relaxed'>Hi, I'm a passionate web developer specializing in React.js, Tailwind CSS, and Vite. I love building clean, modern, and responsive websites that provide seamless user experiences.
 I recently worked on a "Leave Request and Approval" system, showcasing my ability to build full-stack applications using React.js and MongoDB Atlas. I also have experience in frontend development, UI/UX design, and optimizing web performance. 
                 </p>
-                <div className='flex justify-center'>
+                <div className='flex justify-center '>
                     <a href={CV} download> 
                         <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
                         focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
                         rounded-full text-lg'>
                             Download CV
                         </button>
+                    </a>
+                    <a href='https://github.com/kamaleshkannaa' download> 
+                        <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 ml-3
+                        focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
+                        rounded-full text-lg'>
+                            GITHUB
+                        </button>  
+                    </a>
+                    <a href='https://www.linkedin.com/in/kamalesh-kannaa-i-080343307/' download> 
+                        <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 ml-3
+                        focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
+                        rounded-full text-lg'>
+                            LINKEDIN
+                        </button>  
                     </a>
                 </div>
                 </div>
