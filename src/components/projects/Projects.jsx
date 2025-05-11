@@ -60,11 +60,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import image from '../../assets/image.png';
 import image2 from '../../assets/image2.png';
+import image3 from '../../assets/image3.png';
 
 export default function Projects() {
     const listProjects = [
         { id: 1, image: image, title: 'Leave Request and Approval System ', description: 'Developed a full-stack web app using React.js & MongoDB Atlas. Implemented student leave application & teacher approval workflows. Managed authentication and data storage efficiently. Deployed the project using Vercel/Render.' },
-        { id: 2, image: image2, title: 'Brainwave', description: 'Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.' }
+        { id: 2, image: image2, title: 'Brainwave', description: 'Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.' },
+        { id: 3, image: image3, title: 'Graphical Password Authentication', description: ' This is a GitHub project that provides an additional layer of security to alphanumeric passwords by using images as passwords. With this project, users can create a unique and personalized image password by selecting images from a pre-defined set. This password can then be used in combination with a traditional alphanumeric password for enhanced security. '}
     ];
 
     const settings = {
