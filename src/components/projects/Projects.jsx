@@ -134,7 +134,7 @@ export default function Projects() {
             title: 'Brainwave', 
             description: 'Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.',
             githubLink: 'https://github.com/kamaleshkannaa/Brainwave', // Replace with actual link
-            hostLink: 'https://brainwave.vercel.app' // Replace with actual hosted link
+            hostLink: 'https://brainwave-kamaleshkannaas-projects.vercel.app/' // Replace with actual hosted link
         },
         { 
             id: 3, 
