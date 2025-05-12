@@ -168,18 +168,20 @@ export default function Projects() {
                 <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
                 <Slider {...settings}>
                     {listProjects.map((project) => (
-                        <div key={project.id} className="p-4">
-                            <div className="h-[480px] w-full border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden flex flex-col justify-between">
-                                <img src={project.image} alt={project.title} className="w-full h-[250px] object-cover object-center" />
-                                <div className="p-6 flex-grow">
-                                    <h2 className="tracking-widest text-xl title-font font-medium text-gray-400 mb-1">{project.title}</h2>
-                                    <p className="leading-relaxed">{project.description}</p>
-                                    <div className="mt-4 flex justify-between">
-                                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">GitHub</a>
-                                        <a href={project.hostLink} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">Live Demo</a>
-                                    </div>
+                            <div key={project.id} className="p-4">
+                            <div className="h-[460px] w-full border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden flex flex-col">
+                                <img src={project.image} alt={project.title} className="w-full h-[200px] object-cover object-center" />
+                                <div className="p-4 flex flex-col flex-grow">
+                                <h2 className="tracking-widest text-xl title-font font-medium text-gray-400 mb-2">{project.title}</h2>
+                                <div className="overflow-y-auto max-h-[120px] pr-2">
+                                    <p className="leading-relaxed text-sm">{project.description}</p>
                                 </div>
-                            </div>
+                                <div className="mt-auto pt-4 flex justify-between">
+                                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">GitHub</a>
+                                    <a href={project.hostLink} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">Live Demo</a>
+                                </div>
+                                </div>
+                            </div>                                        
                         </div>
                     ))}
                 </Slider>
