@@ -117,6 +117,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import image from '../../assets/image.png';
 import image2 from '../../assets/image2.png';
 import image3 from '../../assets/image3.png';
+import image4 from '../../assets/ex.png';
 
 export default function Projects() {
     const listProjects = [
@@ -143,6 +144,14 @@ export default function Projects() {
             description: 'This is a GitHub project that provides an additional layer of security to alphanumeric passwords by using images as passwords. With this project, users can create a unique and personalized image password by selecting images from a pre-defined set. This password can then be used in combination with a traditional alphanumeric password for enhanced security.',
             githubLink: 'https://github.com/kamaleshkannaa/Graphical-Password-Auth', // Replace with actual link
             hostLink: 'https://graphical-auth-client.vercel.app/' // Replace with actual hosted link
+        },
+        { 
+            id: 4, 
+            image: image4, 
+            title: 'Country Explorer', 
+            description: 'A modern, full-stack web application that lets you explore countries around the world using the REST Countries API.',
+            githubLink: 'https://github.com/kamaleshkannaa/Country_Explore', // Replace with actual link
+            hostLink: 'https://country-explore-ten.vercel.app/' // Replace with actual hosted link
         }
     ];
 
@@ -166,15 +175,15 @@ export default function Projects() {
         <section data-aos="fade-up" data-aos-delay="400" id="projects" className="relative overflow-hidden flex flex-col text-white body-font">
             <div className="container px-5 py-24 mx-auto">
                 <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
-                <Slider {...settings}>
+                <Slider {...settings}>  
                     {listProjects.map((project) => (
                             <div key={project.id} className="p-4">
-                            <div className="h-[460px] w-full border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden flex flex-col">
+                            <div className="h-[430px] w-full border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden flex flex-col">
                                 <img src={project.image} alt={project.title} className="w-full h-[200px] object-cover object-center" />
                                 <div className="p-4 flex flex-col flex-grow">
                                 <h2 className="tracking-widest text-xl title-font font-medium text-gray-400 mb-2">{project.title}</h2>
                                 <div className="overflow-y-auto max-h-[120px] pr-2">
-                                    <p className="leading-relaxed text-sm">{project.description}</p>
+                                    <p className="leading-relaxed text-m">{project.description}</p>
                                 </div>
                                 <div className="mt-auto pt-4 flex justify-between">
                                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-500">GitHub</a>
