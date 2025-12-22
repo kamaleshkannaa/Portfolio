@@ -118,6 +118,7 @@ import image from '../../assets/image.png';
 import image2 from '../../assets/image2.png';
 import image3 from '../../assets/image3.png';
 import image4 from '../../assets/ex.png';
+import image5 from '../../assets/image5.png';
 
 export default function Projects() {
     const listProjects = [
@@ -152,6 +153,14 @@ export default function Projects() {
             description: 'A modern, full-stack web application that lets you explore countries around the world using the REST Countries API.',
             githubLink: 'https://github.com/kamaleshkannaa/Country_Explore', // Replace with actual link
             hostLink: 'https://country-explore-ten.vercel.app/' // Replace with actual hosted link
+        },
+        { 
+            id: 5, 
+            image: image5, 
+            title: 'Enterprise Decision Platform', 
+            description: 'A comprehensive rule engine platform for defining, managing, and executing business rules dynamically across applications.',
+            githubLink: 'https://github.com/kamaleshkannaa/Enterprise_Policy_Rule_Engine', // Replace with actual link
+            hostLink: '//' // Replace with actual hosted link
         }
     ];
 
