@@ -69,11 +69,11 @@ import img from '../../assets/img.png'
 export default function Hero() {
   return (
     <div className='relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col'>
-        {/* Background Gradient */}
-        <div className='absolute right-0 bg-gradient-to-r from-orange-600 via-yellow-500 to-red-400 
-        rounded-full transform rotate-12 -top-20 w-[880px] h-[960px] md:w-[640px] md:h-[720px] 
-        shadow-[0_0_40px_rgb(255, 165, 0, 0.7)]'>
+        {/* Background Glow */}
+        <div className='absolute right-0 bg-accentPurple/20 blur-[150px] 
+        rounded-full transform rotate-12 -top-20 w-[880px] h-[960px] md:w-[640px] md:h-[720px]'>
         </div>
+        <div className='absolute left-[-20%] top-[20%] bg-accentBlue/10 blur-[150px] rounded-full w-[500px] h-[500px]'></div>
 
         <Navbar /> 
 
@@ -87,31 +87,27 @@ export default function Hero() {
                     {/* Hi Image */}
                     <div className='flex justify-center md:justify-start w-full mb-2'>
                         <img src={hi} data-aos='fade-up' data-aos-delay='400' 
-                        className='w-16 h-16 sm:w-20 sm:h-20' alt="hi"/>
+                        className='w-16 h-16 sm:w-20 sm:h-20 drop-shadow-[0_0_15px_rgba(0,255,204,0.5)]' alt="hi"/>
                     </div>
 
-                    <h1 className='title-font sm:text-4xl text-4xl mb-4 font-bold text-white'>
-                        I'm KAMALESH
+                    <h1 className='title-font sm:text-5xl text-4xl mb-4 font-bold text-white tracking-tight'>
+                        I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-accentBlue to-accentTeal'>KAMALESH</span>
                     </h1>
 
-                    <p className='mb-8 leading-relaxed'>
-                        Hi, I'm a passionate web developer specializing in React.js, Tailwind CSS, and Vite. 
-                        I love building clean, modern, and responsive websites that provide seamless user experiences.
-                        I recently worked on a "Leave Request and Approval" system, showcasing my ability to build 
-                        full-stack applications using React.js and MongoDB Atlas. I also have experience in frontend 
-                        development, UI/UX design, and optimizing web performance. 
+                    <p className='mb-8 leading-relaxed text-slate-300 text-lg'>
+                        Results-driven Frontend Developer specializing in <span className='text-accentBlue font-medium'>React.js</span>, <span className='text-accentBlue font-medium'>Tailwind CSS</span>, and <span className='text-accentBlue font-medium'>Vite</span>. Experienced in architecting scalable user interfaces, engineering complex state management, and writing robust unit tests. Passionate about delivering high-performance, responsive web applications and actively seeking opportunities to contribute to dynamic software engineering teams.
                     </p>
 
                     {/* Buttons */}
-                    <div className='flex flex-wrap justify-center md:justify-start gap-3'>
+                    <div className='flex flex-wrap justify-center md:justify-start gap-4'>
                     <a href={CV} download>
-  <button className="relative overflow-hidden h-12 px-8 rounded-full bg-[#3d3a4e] text-white border-none cursor-pointer group">
+  <button className="relative overflow-hidden h-12 px-8 rounded-full bg-darkCard border border-slate-700 text-white cursor-pointer group hover:border-accentBlue/50 transition-colors">
     
     {/* Gradient overlay on hover */}
-    <span className="absolute inset-0 scale-x-0 origin-left transition-transform duration-[475ms] rounded-full bg-gradient-to-r from-[#965de9] via-[#6358ee] to-[#6358ee] group-hover:scale-x-100"></span>
+    <span className="absolute inset-0 scale-x-0 origin-left transition-transform duration-[475ms] rounded-full bg-gradient-to-r from-accentBlue to-accentPurple group-hover:scale-x-100"></span>
     
     {/* Button text */}
-    <span className="relative z-10 text-lg">Download CV</span>
+    <span className="relative z-10 text-lg font-medium tracking-wide">Download CV</span>
 
   </button>
 </a>
@@ -119,11 +115,11 @@ export default function Hero() {
                         <a href="https://github.com/kamaleshkannaa" target="_blank" rel="noopener noreferrer">
   <div className="relative w-12 h-12 group">
     {/* Background layer */}
-    <div className="absolute inset-0 rounded-xl bg-black transition-transform duration-500 ease-in-out group-hover:rotate-[50deg] origin-bottom shadow-lg"></div>
+    <div className="absolute inset-0 rounded-xl bg-darkCard transition-transform duration-500 ease-in-out group-hover:rotate-[50deg] origin-bottom shadow-[0_0_15px_rgba(0,0,0,0.3)]"></div>
 
     {/* Foreground icon container */}
-    <div className="absolute inset-0 flex items-center justify-center rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm z-10 group-hover:bg-white/20 transition-all duration-300">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" height="24" viewBox="0 0 24 24">
+    <div className="absolute inset-0 flex items-center justify-center rounded-xl border border-slate-700/50 bg-white/5 backdrop-blur-sm z-10 group-hover:bg-accentBlue/20 group-hover:border-accentBlue/50 transition-all duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" height="24" viewBox="0 0 24 24" className="group-hover:fill-accentBlue transition-colors">
         <path d="M12 0c-6.626 0-12 5.373-12 12 
           0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234
           c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756
@@ -155,29 +151,27 @@ export default function Hero() {
 <a href="https://www.linkedin.com/in/kamalesh-kannaa-i-080343307/" target="_blank" rel="noopener noreferrer">
   <div className="relative w-12 h-12 cursor-pointer group">
     {/* Base button with border */}
-    <div className="absolute inset-0 flex items-center justify-center rounded-lg border border-white/40 transition-all duration-300 hover:bg-white/20 hover:backdrop-blur-sm z-10">
+    <div className="absolute inset-0 flex items-center justify-center rounded-xl border border-slate-700/50 transition-all duration-300 hover:bg-accentPurple/20 hover:border-accentPurple/50 hover:backdrop-blur-sm z-10 bg-white/5 backdrop-blur-sm">
       {/* LinkedIn Icon */}
-      <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-5 h-5 fill-white group-hover:fill-accentPurple transition-colors" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.25 8.5h4.5v13H.25v-13zM8.98 8.5h4.31v1.79h.06c.6-1.14 2.06-2.35 4.23-2.35 4.52 0 5.35 2.97 5.35 6.83v7.73H18v-6.86c0-1.64-.03-3.75-2.29-3.75-2.29 0-2.64 1.79-2.64 3.63v6.98H8.98v-13z" />
       </svg>
     </div>
 
     {/* Rotating background on hover */}
-    <div className="absolute inset-0 bg-[#0077b5] rounded-lg z-0 transition-transform duration-300 ease-in-out group-hover:rotate-[50deg] origin-bottom"></div>
+    <div className="absolute inset-0 bg-darkCard shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-xl z-0 transition-transform duration-300 ease-in-out group-hover:rotate-[50deg] origin-bottom"></div>
   </div>
 </a>
-
-
-
-
-
 
                     </div>
                 </div>
 
                 {/* Right Section (Profile Image) */}
-                <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center'>
-                   <img src={img} alt="hero" className='object-cover object-center rounded-full w-72 h-72 sm:w-80 sm:h-80' />
+                <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center relative'>
+                   <div className='absolute inset-0 bg-gradient-to-tr from-accentBlue to-accentPurple rounded-full blur-2xl opacity-30'></div>
+                   <div className='relative p-1 rounded-full bg-gradient-to-tr from-accentBlue via-transparent to-accentPurple'>
+                     <img src={img} alt="hero" className='object-cover object-center rounded-full w-72 h-72 sm:w-80 sm:h-80 bg-darkCard' />
+                   </div>
                 </div>
 
             </div>

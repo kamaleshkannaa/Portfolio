@@ -13,19 +13,23 @@ export default function Skills() {
             <div 
             data-aos='fade-up' 
             data-aos-delay='200' 
-            className='md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pd-10 border-b border-orange-400'>
-                <h1 data-aos='fade-right' data-aos-delay='500' className='sm:text-4xl text-2xl font-medium title-font mb-2 text-white '>Skills</h1>
-                <h2 className='title-font font-bold text-white sm:text-2xl  '>Frontend Development :</h2>    
-                <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base'>
-                React.js (Hooks, Context API) ✅ Tailwind CSS & Bootstrap ✅ JavaScript (ES6+) ✅ Vite & Webpack
+            className='md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-accentPurple/50'>
+                <h1 data-aos='fade-right' data-aos-delay='500' className='sm:text-4xl text-2xl font-bold title-font mb-4 text-transparent bg-clip-text bg-gradient-to-r from-accentBlue to-accentPurple'>Skills</h1>
+                <h2 className='title-font font-semibold text-accentBlue sm:text-2xl mt-4 mb-2'>Frontend Technologies :</h2>    
+                <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base text-slate-300'>
+                <span className="text-accentTeal">▹</span> React.js, Tailwind CSS, HTML5, CSS3, Vite, Material-UI (MUI)
                 </p>
-                <h2 className='title-font font-bold text-white sm:text-2xl '>Backend & Database :</h2> 
-                <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base'>
-                Node.js & Express.js (Basics) ✅ MongoDB (Atlas)              
+                <h2 className='title-font font-semibold text-accentBlue sm:text-2xl mt-6 mb-2'>Backend & Database :</h2> 
+                <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base text-slate-300'>
+                <span className="text-accentTeal">▹</span> Node.js, Express.js, MongoDB Atlas, RESTful APIs, SQL              
                 </p> 
-                <h2 className='title-font font-bold text-white sm:text-2xl '>Other Skills :</h2> 
-                <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base'>
-                 Git & GitHub ✅ API Integration (REST) ✅ UI/UX Design Principles ✅ Programming Languages (C, JAVA)             
+                <h2 className='title-font font-semibold text-accentBlue sm:text-2xl mt-6 mb-2'>Languages :</h2> 
+                <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base text-slate-300'>
+                 <span className="text-accentTeal">▹</span> JavaScript (ES6+), Java, C, SQL             
+                </p>
+                <h2 className='title-font font-semibold text-accentBlue sm:text-2xl mt-6 mb-2'>Tools & Testing :</h2> 
+                <p data-aos='fade-right' data-aos-delay='500' className='leading-relaxed text-base text-slate-300'>
+                 <span className="text-accentTeal">▹</span> Git, GitHub, Jest, React Testing Library, Postman             
                 </p>
 
             </div>
